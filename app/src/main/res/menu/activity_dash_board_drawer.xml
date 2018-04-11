@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/add_new_doc"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Add New Document" />
+
+        <item
+            android:id="@+id/add_new_doc_qr"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="QR Code Scanner" />
+
+        <item
+            android:id="@+id/issuee_doc"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Issuee Document" />
+        </group>
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+           android:id="@+id/vehicledoc"
+            android:title="Vehicle Documents">
+            <menu>
+                <item
+                    android:id="@+id/driving_license"
+                    android:title="Driving License"
+
+                  />
+
+                <item
+                    android:id="@+id/puc"
+                    android:title="PUC"
+
+                 />
+
+                <item
+                    android:id="@+id/insurance"
+                    android:title="Insurance"
+
+                   />
+
+                <item
+                    android:id="@+id/smart_card"
+                    android:title="Smart Card"
+
+                   />
+            </menu>
+        </item>
+        </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/qr_code"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="QR Code" />
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Setting" >
+        </item>
+
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="FeedBack" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

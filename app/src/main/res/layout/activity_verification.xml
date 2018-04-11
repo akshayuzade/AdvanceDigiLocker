@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+
+    android:background="@drawable/bg3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tvskip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="end"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="30dp"
+        android:onClick="skip"
+        android:textColor="#f22222"
+        android:text="skip" />
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.hakathon.advaceddigi.VerificationActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Adhar Verification" />
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/vvetadharno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:editable="true"
+            android:hint="Enter Adhar No"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/vvtnsendotpadhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:onClick="sendadharotp"
+            android:text="Send OTP" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/vvetadharotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Enter OTP"
+        android:visibility="gone"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/vvbtnadharverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:onClick="verifyadharotp"
+        android:visibility="gone"
+        android:text="Verify" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="------------------------------------------------------------------"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Mobile Verification" />
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/vvetmobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:editable="true"
+            android:hint="Enter Mobile No"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/vvtnsendotpmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:onClick="sendmobileotp"
+            android:text="Send OTP" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/vvetmobileotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Enter OTP"
+android:visibility="gone"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/vvbtnmobileverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:onClick="verifymobileotp"
+        android:visibility="gone"
+        android:text="Verify" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="------------------------------------------------------------------"/>
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Verification"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/vvetemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:editable="true"
+            android:hint="Enter Email Address"
+            android:inputType="textPersonName" />
+
+        <Button
+
+            android:id="@+id/vvtnsendotpemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:onClick="sendemailotp"
+            android:text="Send OTP" />
+    </TableRow>
+
+    <EditText
+
+        android:id="@+id/vvetemailotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+
+        android:hint="Enter OTP"
+        android:inputType="textPersonName" />
+
+    <Button
+
+        android:id="@+id/vvbtnemailverify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:onClick="verifyemailotp"
+        android:text="Verify" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="------------------------------------------------------------------"/>
+
+</LinearLayout>
+    </RelativeLayout>
+</ScrollView>

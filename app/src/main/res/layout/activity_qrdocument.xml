@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg3"
+    android:orientation="vertical">
+
+
+
+    <Spinner
+        android:id="@+id/spinnerdocumentlist"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:entries="@array/documentlist" />
+
+
+    <Button
+        android:id="@+id/btnqrscan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_button"
+        android:padding="15dp"
+        android:textColor="#ffff"
+        android:text="Scan QR" />
+
+    <TableRow
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:inputType="textPersonName"
+            android:text="Name here" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_weight=".8"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="DOB" />
+
+        <TextView
+            android:id="@+id/tvdob"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:inputType="textPersonName"
+            android:text="DOB here" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/submitdoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_button"
+        android:padding="15dp"
+        android:textColor="#ffff"
+        android:text="Submit Documets" />
+</LinearLayout>

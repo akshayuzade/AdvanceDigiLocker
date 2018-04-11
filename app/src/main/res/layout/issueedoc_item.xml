@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/issueetvdocname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/issueetvdocurl"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:textColor="#1e58b5"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>
